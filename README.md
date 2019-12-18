@@ -12,9 +12,9 @@ PS> scoop install plugin-roller
 PS> scoop_roller check
 
 # Recommends:
-PS> scoop alias _in "scoop install $*;   scoop-roller update"
-PS> scoop alias _un "scoop uninstall $*; scoop-roller update"
-PS> scoop alias _up "scoop update; scoop update $*; scoop-roller update"
+PS> scoop alias _in "scoop install $*;   scoop_roller update"
+PS> scoop alias _un "scoop uninstall $*; scoop_roller update"
+PS> scoop alias _up "scoop update; scoop update $*; scoop_roller update"
 ```
 
 ## Usage
