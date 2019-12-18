@@ -35,23 +35,26 @@ Subcommands:
 
 ```
 PS> cat $DOTFILES\scoop\conflicts.csv >$SCOOP_DIR\roller\list.csv
+
 PS> scoop_roller resolve
-All 14 conflicts has resolved.
+All 14 conflicts have resolved.
 ```
 
 ```
 PS> scoop install gow vim
+
 PS> scoop_roller set vim gow
 Set vim's shim as main/gow's one.
+
 PS> scoop_roller get vim
 vim: main/gow (others: main/vim)
 ```
 
 ```
-PS> scoop update
-PS> scoop update *
+PS> scoop update; scoop update *
+
 PS> scoop_roller check
-All 15 conflicts has resolved.
+All 15 conflicts have resolved.
 ```
 
 ## Plans
@@ -87,5 +90,5 @@ vim,main/vim,main/gow,main/vim
 Each columns contents:
 
 - 1st: command name
-- 2nd: resisted manifest with bucket name, or `nil`.
+- 2nd: resisted manifest name to use, or `nil`.
 - 3rd and more: list of all defining manifests with bucket name.
